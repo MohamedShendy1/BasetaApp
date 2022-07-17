@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="din-next-lt-w23-bold-1.ttf">
+            <string>DINNextLTW23-Bold2</string>
+        </array>
+        <array key="din-next-lt-w23-regular.ttf">
+            <string>DINNextLTW23-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartCell" rowHeight="92" id="sht-VM-FOH" customClass="CartCell" customModule="BasetaApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sht-VM-FOH" id="I4I-hB-dtl">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nqe-um-ZZL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ltb-Oj-ecW">
+                                <rect key="frame" x="5" y="11" width="70" height="69"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle-3" translatesAutoresizingMaskIntoConstraints="NO" id="lRd-BJ-Fzp">
+                                        <rect key="frame" x="0.0" y="-1" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="4Bb-CT-bQa"/>
+                                    <constraint firstAttribute="height" constant="69" id="IYx-UZ-zA4"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vub-Aq-uxJ">
+                                <rect key="frame" x="78" y="2" width="237" height="85"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="m8O-XJ-7XU">
+                                        <rect key="frame" x="0.0" y="0.0" width="237" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="KFC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpC-Xp-nIe">
+                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="25"/>
+                                                <fontDescription key="fontDescription" name="DINNextLTW23-Bold2" family="DIN Next LT W23" pointSize="17"/>
+                                                <color key="textColor" name="cellTitle"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dL1-bg-0EX">
+                                                <rect key="frame" x="118.5" y="0.0" width="118.5" height="25"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfR-3y-pnq">
+                                                        <rect key="frame" x="56" y="1" width="53" height="23"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="23" id="mp6-9Q-7wL"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="10"/>
+                                                        <color key="tintColor" name="closeColor"/>
+                                                        <state key="normal" title="delete" image="trash" catalog="system">
+                                                            <color key="titleColor" name="closeColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="EfR-3y-pnq" firstAttribute="top" secondItem="dL1-bg-0EX" secondAttribute="top" constant="1" id="3sM-wv-bW5"/>
+                                                    <constraint firstItem="EfR-3y-pnq" firstAttribute="centerY" secondItem="dL1-bg-0EX" secondAttribute="centerY" id="Sqt-BA-T9u"/>
+                                                    <constraint firstAttribute="trailing" secondItem="EfR-3y-pnq" secondAttribute="trailing" constant="9.5" id="vIr-N8-lkg"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pieces of beef bacon with creamy mayonnaise sauce, cheddar cheese, sauteed mushrooms and a pure beef burger" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IKr-Jq-1B7">
+                                        <rect key="frame" x="0.0" y="25" width="237" height="44.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44.5" id="4DG-cN-ai5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="12"/>
+                                        <color key="textColor" name="cellTittleLight"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7yB-jV-g22">
+                                        <rect key="frame" x="0.0" y="69.5" width="237" height="15.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75 EG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uNp-IV-3gY">
+                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="DINNextLTW23-Bold2" family="DIN Next LT W23" pointSize="14"/>
+                                                <color key="textColor" name="closeColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWB-n6-qAr">
+                                                <rect key="frame" x="118.5" y="0.0" width="118.5" height="15.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="x 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dcb-nb-hjy">
+                                                        <rect key="frame" x="95" y="-2" width="18" height="19.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="19.5" id="NLO-4K-j5A"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="DINNextLTW23-Bold2" family="DIN Next LT W23" pointSize="13"/>
+                                                        <color key="textColor" name="cellTitle"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="dcb-nb-hjy" firstAttribute="centerY" secondItem="fWB-n6-qAr" secondAttribute="centerY" id="ZTF-2A-Hfo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dcb-nb-hjy" secondAttribute="trailing" constant="5.5" id="zzq-YK-h67"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="sgT-Vp-Kvc"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXh-Uv-egI">
+                                <rect key="frame" x="0.0" y="88" width="320" height="1"/>
+                                <color key="backgroundColor" name="lightlyView"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="6ru-Q5-9Eg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ltb-Oj-ecW" firstAttribute="top" secondItem="Nqe-um-ZZL" secondAttribute="top" constant="11" id="169-oq-6rJ"/>
+                            <constraint firstItem="oXh-Uv-egI" firstAttribute="leading" secondItem="Nqe-um-ZZL" secondAttribute="leading" id="LjZ-zB-CF3"/>
+                            <constraint firstAttribute="trailing" secondItem="oXh-Uv-egI" secondAttribute="trailing" id="NtI-dv-yEH"/>
+                            <constraint firstItem="Vub-Aq-uxJ" firstAttribute="top" secondItem="Nqe-um-ZZL" secondAttribute="top" constant="2" id="Oml-Zh-IU2"/>
+                            <constraint firstItem="ltb-Oj-ecW" firstAttribute="leading" secondItem="Nqe-um-ZZL" secondAttribute="leading" constant="5" id="esc-QC-2fT"/>
+                            <constraint firstAttribute="bottom" secondItem="Vub-Aq-uxJ" secondAttribute="bottom" constant="2" id="kOv-cv-st3"/>
+                            <constraint firstItem="Vub-Aq-uxJ" firstAttribute="leading" secondItem="ltb-Oj-ecW" secondAttribute="trailing" constant="3" id="ti2-R1-0ff"/>
+                            <constraint firstAttribute="bottom" secondItem="oXh-Uv-egI" secondAttribute="bottom" id="xTK-gv-0YT"/>
+                            <constraint firstAttribute="trailing" secondItem="Vub-Aq-uxJ" secondAttribute="trailing" constant="5" id="xxk-kw-Dot"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Nqe-um-ZZL" secondAttribute="trailing" id="7W5-8a-MJx"/>
+                    <constraint firstItem="Nqe-um-ZZL" firstAttribute="centerY" secondItem="I4I-hB-dtl" secondAttribute="centerY" constant="-1" id="PX1-vK-DVp"/>
+                    <constraint firstAttribute="bottom" secondItem="Nqe-um-ZZL" secondAttribute="bottom" constant="2" id="Xu1-p0-3dh"/>
+                    <constraint firstItem="Nqe-um-ZZL" firstAttribute="top" secondItem="I4I-hB-dtl" secondAttribute="top" id="fJO-2E-cBA"/>
+                    <constraint firstItem="Nqe-um-ZZL" firstAttribute="centerX" secondItem="I4I-hB-dtl" secondAttribute="centerX" id="pJs-36-IY4"/>
+                    <constraint firstItem="Nqe-um-ZZL" firstAttribute="leading" secondItem="I4I-hB-dtl" secondAttribute="leading" id="vLa-BJ-xf6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="VQr-W7-rZc"/>
+            <point key="canvasLocation" x="100.00000000000001" y="254.12946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle-3" width="145.5" height="145.5"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+        <namedColor name="cellTitle">
+            <color red="0.043137254901960784" green="0.17647058823529413" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cellTittleLight">
+            <color red="0.30980392156862746" green="0.41568627450980394" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="closeColor">
+            <color red="0.93333333333333335" green="0.1803921568627451" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightlyView">
+            <color red="0.94499999284744263" green="0.9570000171661377" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

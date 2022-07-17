@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="din-next-lt-w23-regular.ttf">
+            <string>DINNextLTW23-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="gTV-IL-0wX" customClass="CategoryCell" customModule="BasetaApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="134"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="134"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RNy-74-yBI">
+                        <rect key="frame" x="1" y="1" width="98" height="132"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image Food" translatesAutoresizingMaskIntoConstraints="NO" id="Dfl-l5-sYV">
+                                <rect key="frame" x="4" y="5" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Ln0-Lu-xlT"/>
+                                    <constraint firstAttribute="height" constant="90" id="vxP-E6-gb5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bezza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn2-0A-iw9">
+                                <rect key="frame" x="1" y="101" width="96" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="NWF-Lg-2Ki"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="17"/>
+                                <color key="textColor" name="cellTitle"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dfl-l5-sYV" firstAttribute="centerX" secondItem="RNy-74-yBI" secondAttribute="centerX" id="H6T-qq-5tZ"/>
+                            <constraint firstItem="Dfl-l5-sYV" firstAttribute="top" secondItem="RNy-74-yBI" secondAttribute="top" constant="5" id="ZAo-RX-Ynl"/>
+                            <constraint firstAttribute="width" constant="98" id="dyX-fI-23O"/>
+                            <constraint firstItem="Dfl-l5-sYV" firstAttribute="leading" secondItem="RNy-74-yBI" secondAttribute="leading" constant="4" id="ggS-Gm-duu"/>
+                            <constraint firstAttribute="height" constant="132" id="llg-VL-g19"/>
+                            <constraint firstItem="Yn2-0A-iw9" firstAttribute="top" secondItem="Dfl-l5-sYV" secondAttribute="bottom" constant="6" id="pz0-eG-2iV"/>
+                            <constraint firstItem="Yn2-0A-iw9" firstAttribute="leading" secondItem="RNy-74-yBI" secondAttribute="leading" constant="1" id="tzB-1E-L6P"/>
+                            <constraint firstAttribute="trailing" secondItem="Dfl-l5-sYV" secondAttribute="trailing" constant="4" id="vZ6-we-tG5"/>
+                            <constraint firstAttribute="trailing" secondItem="Yn2-0A-iw9" secondAttribute="trailing" constant="1" id="zcO-3p-jqv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RNy-74-yBI" secondAttribute="bottom" constant="1" id="QbP-rs-HGG"/>
+                <constraint firstAttribute="trailing" secondItem="RNy-74-yBI" secondAttribute="trailing" constant="1" id="mXM-oG-Fqg"/>
+                <constraint firstItem="RNy-74-yBI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="t0h-PI-QjE"/>
+                <constraint firstItem="RNy-74-yBI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="wEA-hM-S4d"/>
+            </constraints>
+            <size key="customSize" width="102" height="134"/>
+            <connections>
+                <outlet property="img" destination="Dfl-l5-sYV" id="FSB-i3-Coy"/>
+                <outlet property="lblTitle" destination="Yn2-0A-iw9" id="gGv-rO-i4J"/>
+            </connections>
+            <point key="canvasLocation" x="37.681159420289859" y="145.98214285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image Food" width="153" height="153"/>
+        <namedColor name="cellTitle">
+            <color red="0.043137254901960784" green="0.17647058823529413" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

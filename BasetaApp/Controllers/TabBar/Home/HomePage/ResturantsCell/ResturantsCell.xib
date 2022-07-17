@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="din-next-lt-w23-bold-1.ttf">
+            <string>DINNextLTW23-Bold2</string>
+        </array>
+        <array key="din-next-lt-w23-regular.ttf">
+            <string>DINNextLTW23-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="ResturantsCell" customModule="BasetaApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmJ-sC-3zI">
+                        <rect key="frame" x="2" y="2" width="316" height="72"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKn-ds-PtU">
+                                <rect key="frame" x="8" y="70" width="300" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="cCP-aP-dYc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLl-bO-LhY">
+                                <rect key="frame" x="2" y="8" width="56" height="56"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle-2" translatesAutoresizingMaskIntoConstraints="NO" id="xoi-GK-WB3">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="56" id="43B-cY-Cvt"/>
+                                            <constraint firstAttribute="height" constant="56" id="NDm-aj-QhI"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xoi-GK-WB3" secondAttribute="bottom" id="0Ph-aD-T5C"/>
+                                    <constraint firstAttribute="height" constant="56" id="DUy-7V-Vx9"/>
+                                    <constraint firstAttribute="trailing" secondItem="xoi-GK-WB3" secondAttribute="trailing" id="Ehj-GD-azP"/>
+                                    <constraint firstItem="xoi-GK-WB3" firstAttribute="top" secondItem="bLl-bO-LhY" secondAttribute="top" id="JeP-02-b8N"/>
+                                    <constraint firstItem="xoi-GK-WB3" firstAttribute="leading" secondItem="bLl-bO-LhY" secondAttribute="leading" id="Mo4-LC-sek"/>
+                                    <constraint firstItem="xoi-GK-WB3" firstAttribute="centerX" secondItem="bLl-bO-LhY" secondAttribute="centerX" id="hAR-y6-OLK"/>
+                                    <constraint firstAttribute="width" constant="56" id="haA-pS-s3J"/>
+                                    <constraint firstItem="xoi-GK-WB3" firstAttribute="centerY" secondItem="bLl-bO-LhY" secondAttribute="centerY" id="iM7-yX-zmS"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pUP-Ye-a2U">
+                                <rect key="frame" x="63" y="8" width="213" height="56"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Jsy-45-QSo">
+                                        <rect key="frame" x="0.0" y="0.0" width="213" height="18.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="KFC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKa-Ug-L0m">
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="DINNextLTW23-Bold2" family="DIN Next LT W23" pointSize="17"/>
+                                                <color key="textColor" name="cellTitle"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="open now" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3R-ra-cXk">
+                                                <rect key="frame" x="78" y="0.0" width="135" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="13"/>
+                                                <color key="textColor" name="openColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arabic food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gGk-5c-ZRt">
+                                        <rect key="frame" x="0.0" y="18.5" width="213" height="19"/>
+                                        <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="13"/>
+                                        <color key="textColor" name="cellTitle"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DYY-U4-rUr">
+                                        <rect key="frame" x="0.0" y="37.5" width="213" height="18.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31-21 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dOi-ue-cWF">
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="13"/>
+                                                <color key="textColor" name="cellTittleLight"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minumum 45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dah-bK-7ep">
+                                                <rect key="frame" x="68" y="0.0" width="74.5" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="13"/>
+                                                <color key="textColor" name="cellTittleLight"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="far 339 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gcd-Zm-cYe">
+                                                <rect key="frame" x="152.5" y="0.0" width="60.5" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="13"/>
+                                                <color key="textColor" name="cellTittleLight"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="4li-hU-KOA"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="cRL-lb-XRd">
+                                <rect key="frame" x="292" y="25" width="15" height="22"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fEJ-na-sOV">
+                                        <rect key="frame" x="0.0" y="-0.5" width="15" height="15"/>
+                                        <color key="tintColor" red="0.93236821889999999" green="0.73331803080000002" blue="0.38281190399999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="KhW-Vb-Rj3"/>
+                                            <constraint firstAttribute="height" constant="15" id="NEd-Er-wo3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWz-Ua-ldz">
+                                        <rect key="frame" x="0.0" y="16" width="15" height="6"/>
+                                        <fontDescription key="fontDescription" name="DINNextLTW23-Bold2" family="DIN Next LT W23" pointSize="7"/>
+                                        <color key="textColor" name="cellTitle"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KKn-ds-PtU" firstAttribute="top" secondItem="bLl-bO-LhY" secondAttribute="bottom" constant="6" id="005-3F-nf1"/>
+                            <constraint firstAttribute="height" constant="72" id="Cix-OE-EzM"/>
+                            <constraint firstAttribute="trailing" secondItem="KKn-ds-PtU" secondAttribute="trailing" constant="8" id="HDr-hD-7o0"/>
+                            <constraint firstItem="KKn-ds-PtU" firstAttribute="leading" secondItem="zmJ-sC-3zI" secondAttribute="leading" constant="8" id="I5a-4C-SNz"/>
+                            <constraint firstItem="bLl-bO-LhY" firstAttribute="centerY" secondItem="zmJ-sC-3zI" secondAttribute="centerY" id="eg9-Ox-emk"/>
+                            <constraint firstItem="pUP-Ye-a2U" firstAttribute="leading" secondItem="bLl-bO-LhY" secondAttribute="trailing" constant="5" id="erw-5g-pRR"/>
+                            <constraint firstItem="pUP-Ye-a2U" firstAttribute="top" secondItem="bLl-bO-LhY" secondAttribute="top" id="gJM-1N-VLI"/>
+                            <constraint firstItem="cRL-lb-XRd" firstAttribute="centerY" secondItem="zmJ-sC-3zI" secondAttribute="centerY" id="ikp-L9-dvi"/>
+                            <constraint firstAttribute="bottom" secondItem="KKn-ds-PtU" secondAttribute="bottom" constant="1" id="ljf-Ol-IfP"/>
+                            <constraint firstAttribute="trailing" secondItem="pUP-Ye-a2U" secondAttribute="trailing" constant="40" id="nju-Hk-LcW"/>
+                            <constraint firstAttribute="trailing" secondItem="cRL-lb-XRd" secondAttribute="trailing" constant="9" id="qMC-5n-F4y"/>
+                            <constraint firstItem="bLl-bO-LhY" firstAttribute="leading" secondItem="zmJ-sC-3zI" secondAttribute="leading" constant="2" id="zSw-nV-Hyv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zmJ-sC-3zI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="4lF-zs-0dW"/>
+                    <constraint firstAttribute="bottom" secondItem="zmJ-sC-3zI" secondAttribute="bottom" constant="2" id="UUl-1M-9av"/>
+                    <constraint firstItem="zmJ-sC-3zI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="WBv-dQ-bss"/>
+                    <constraint firstAttribute="trailing" secondItem="zmJ-sC-3zI" secondAttribute="trailing" constant="2" id="iZU-AX-Bp8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-7.2463768115942031" y="127.23214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle-2" width="268" height="268"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="cellTitle">
+            <color red="0.043137254901960784" green="0.17647058823529413" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cellTittleLight">
+            <color red="0.30980392156862746" green="0.41568627450980394" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="openColor">
+            <color red="0.11372549019607843" green="0.74901960784313726" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
